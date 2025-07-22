@@ -22,7 +22,7 @@ public class LoggingFilter implements Filter {
     
     private void loggingRequest(FilterableRequestSpecification req) {
         logger.info("Request Header : \n {}", req.getHeaders());
-        logger.info("Request Body : \n {}", req.getBody().toString());
+        if (req.getBody() != null) logger.info("Request Body : \n {}", req.getBody().toString());
     }
     
     private void loggingResponse(Response response) {

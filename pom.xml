@@ -75,6 +75,7 @@
       <version>3.5.3</version>
       <configuration>
         <suiteXmlFiles>
+          <!--suppress UnresolvedMavenProperty -->
           <suiteXmlFile>src/test/resources/buildsuites/${suite}.xml</suiteXmlFile>
         </suiteXmlFiles>
       </configuration>

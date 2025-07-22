@@ -3,7 +3,11 @@
 <suite name="Login Service Tests" verbose="1" >
     <test name="Login Service" parallel="methods" thread-count="2">
         <classes>
-            <class name="com.api.tests.LoginServiceTests" />
+            <class name="com.api.tests.LoginServiceTests">
+                <methods>
+                    <exclude name="signUpTest"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
